@@ -1,12 +1,38 @@
-# React + Vite
+Passos para utilizar o projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Clone o repositório
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio
+2. Instale as dependências
+   npm install
+3. Execute a aplicação
+   npm run dev
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é uma aplicação front-end desenvolvida com React em VITE que interage com uma API RESTful para realizar o gerenciamento de usuários. A interface permite visualizar, cadastrar, editar e excluir usuários de forma simples e eficiente.
 
-## Expanding the ESLint configuration
+Através de chamadas à API utilizando Axios, a aplicação consome a rota /usuarios do back-end para manter a lista de usuários sempre atualizada.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧩 Funcionalidades
+✅ Exibição de mensagem de boas-vindas ao usuário.
+
+🔍 Requisição GET para listar todos os usuários da API.
+
+📝 Formulário com campos para nome e email.
+
+➕ Envio de dados via POST para cadastro de novos usuários.
+
+✏️ Edição de usuários com PUT na rota /usuarios/:id.
+
+❌ Exclusão de usuários com DELETE na rota /usuarios/:id.
+
+🔄 Atualização automática da lista após cada operação.
+
+🛠️ Tecnologias utilizadas
+React (hooks: useState, useEffect)
+
+Axios para comunicação HTTP
+
+JavaScript ES6+
+
+HTML/CSS básico (pode ser adaptado para usar bibliotecas como Tailwind ou Material UI)
